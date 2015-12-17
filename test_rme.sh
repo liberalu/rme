@@ -56,10 +56,10 @@ function testFunc() {
 
 }
 
-testFunc ". $DIR/rme.sh './${testpath}' './${testpath}/foo1/foo/.i.a'" "./$testpath ./$testpath/foo1 ./$testpath/foo1/foo ./$testpath/foo1/foo/.i.a";
-testFunc ". $DIR/rme.sh './${testpath}' './${testpath}/foo1/foo/.i.a,./${testpath}/foo1/.e.a'" "./$testpath ./$testpath/foo1 ./$testpath/foo1/foo ./$testpath/foo1/foo/.i.a ./$testpath/foo1/.e.a"; 
-testFunc ". $DIR/rme.sh './${testpath}' './${testpath}/a.a,./${testpath}/foo'" "./$testpath ./$testpath/foo ./$testpath/a.a"; 
-testFunc ". $DIR/rme.sh './${testpath}/foo' './${testpath}/foo/d.a'" "./$testpath/foo ./$testpath/foo/d.a"; 
+testFunc ". $path/rme.sh './${testpath}' './${testpath}/foo1/foo/.i.a'" "./$testpath ./$testpath/foo1 ./$testpath/foo1/foo ./$testpath/foo1/foo/.i.a";
+testFunc ". $path/rme.sh './${testpath}' './${testpath}/foo1/foo/.i.a,./${testpath}/foo1/.e.a'" "./$testpath ./$testpath/foo1 ./$testpath/foo1/foo ./$testpath/foo1/foo/.i.a ./$testpath/foo1/.e.a"; 
+testFunc ". $path/rme.sh './${testpath}' './${testpath}/a.a,./${testpath}/foo'" "./$testpath ./$testpath/foo ./$testpath/a.a"; 
+testFunc ". $path/rme.sh './${testpath}/foo' './${testpath}/foo/d.a'" "./$testpath/foo ./$testpath/foo/d.a";
 
 if [ "$is_fail" == 1 ]; then 
     printf "\n\nDetails\n";
